@@ -1,0 +1,342 @@
+
+:root{
+    --min-color:#7fb7d0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small */
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+/* large */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* start header */
+header{
+    width: 100%;
+    background-color: #023047;
+    z-index: 1;
+}
+header .container{
+    position: relative;
+}
+header .container ul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70px;
+}
+header .container ul li{
+    list-style: none;
+}
+header .container ul li a{
+    color: var(--min-color);
+    text-decoration: none;
+    font-size: 22px;
+}
+header .container  .kila{
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding-top: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 130px;
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+    width: 150px;
+    margin-top: -20px;
+    height: 110px;
+}
+header .container .kila li{
+    padding-bottom: 10px;
+   
+}
+header .container .kila :only-child{
+    border-bottom: 1px solid black;
+}
+header .container .kila li  a{
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+header .container ul li input{
+    width: 420px;
+    border-radius: 35px;
+    outline: none;
+    height: 45px;
+    background-color: #219ebc;
+    color: red;
+    padding-right: 50px;
+    font-size: 19px;
+    
+}
+header .container ul li .one i{
+    /* position: fixed; */
+    margin-left: -22px;
+    margin-right: -990px;
+    /* margin-bottom: -60px; */
+    /* margin-top: -11px; */
+    font-size: 18px;
+    color: #023047;
+}
+header .container ul li a:hover{
+    color: red;
+}
+header .image{
+    width: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 45px;
+    cursor: pointer;
+    display: none;
+}
+header .image:hover{
+    opacity: .7;
+}
+/* end header */
+/* start About */
+.About .container .one{
+    margin-top: 25px;
+     display: flex; 
+     align-items: flex-start;
+    justify-content:  space-between;
+     color: #64a2b7;
+}
+.About .container .one h3{
+    font-size: 18px;
+    /* margin-left: 200px; */
+    padding-right: 50px;
+}
+.About .container .one h4{
+    padding-left: 70px;
+}
+.About .container .number{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    margin: 10px 30px;
+}
+.About .container .number .two{
+    background-color: #023047;
+    display: inline;
+    height: 450px;
+    border-radius: 17px;
+}
+.two img{
+    /* border-radius: 10px; */
+    width: 300px;
+}
+.two h2{
+    text-align: center;
+    color: var(--min-color);
+    font-size: 24px;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 17px;
+}
+.two p{
+    display: inline;
+    padding-bottom: 30px;
+    margin-right: 110px;
+    color: #219ebc;
+    
+}
+.two .S{
+    margin-right: 30px;
+}
+.fa-star{
+    color: gold;
+}
+.two a{
+    display: flex;
+    width: 70px;
+    margin: auto;
+    padding-top: 30px;
+    background-color: var(--min-color);
+    text-decoration: none;
+    padding:  10px 20px;
+    color: #023047;
+    margin-top: 20px;
+    border-radius: 7px;
+    font-size: 20px;
+}
+.two a:hover{
+    background-color: #ffae31;
+    color: brown;
+}
+
+footer{
+    width: 100%;
+    background-color: #023047;
+    display: flex;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+}
+footer .text{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: var(--min-color);
+    margin: 10px;
+    padding-right: 70px;
+}
+footer .text h1{
+    font-size: 17px;
+    padding-right: 550px;
+}
+footer .text h3 {
+   font-size: 15px;
+   margin: 0;
+   padding: 0 10px;
+}
+footer .text h4{
+    font-size: 15px;
+    margin: 0;
+    padding: 0 10px;
+}
+footer .text h5{
+    font-size: 15px;
+    margin: 0;
+    padding: 0 10px;
+}
+.user .hone{
+    text-align: center;
+    width: 100%;
+    padding-top: 60px;
+}
+.user .hone img{
+    width: 200px;
+    border-radius: 50%;
+}
+.user .hone h3{
+    padding-top: 10px;
+    color: #023047;
+    font-size: 25px;
+    letter-spacing: .7;
+}
+/* file user */
+.div .container{
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 200px;
+}
+.red {
+    margin-right: 260px;
+    /* margin: auto; */
+}
+.red h3{
+    width: 600px;
+    background-color: #023047;
+    margin: 10px 0;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: var(--min-color);
+    cursor: pointer;
+}
+/* end file user */
+/* start object */
+.object .container{
+    padding-top: 20px;
+    padding-right: 80px;
+    display: flex;
+}
+.object .container .two{
+    padding-bottom: 100px;
+}
+.object .container .two h1{
+    font-size: 22px;
+    padding: 30px;
+    font-weight: 300;
+    color: #023047;
+    padding-bottom: 70px;
+}
+.object .container .two h3{
+    font-size: 22px;
+    font-weight: 300;
+    color: #023047;
+    padding-bottom: 50px;
+}
+.object .container .two  .p{
+    color: #023047;
+    font-size: 22px;
+    width: 500px;
+    padding-left: 230px;
+    font-weight: 200;
+}
+.object .container .three img{
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.object .container .three p{
+    text-align: center;
+}
+.object .container .three h4{
+    text-align: center;
+    color: #777;
+    font-size: 23px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+.object .container .three button{
+    display: block;
+    width: 300px;
+    height: 70px;
+    background-color: #023047;
+    border: none;
+    color: var(--min-color);
+    margin-right: 35px;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+.object .container .three a{
+    display: block;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    background-color: #219ebc;
+    color: #fff;
+    margin-right: 35px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 60px;
+    padding-top: 30px;
+    text-decoration: none;
+}
+/* end object */
